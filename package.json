@@ -1,5 +1,5 @@
 {
-  "name": "zombie",
+  "name": "zombie-nocors",
   "version": "4.2.1",
   "description": "Insanely fast, full-stack, headless browser testing using Node.js",
   "homepage": "https://www.npmjs.com/package/zombie",
@@ -36,8 +36,7 @@
   "main": "lib",
   "scripts": {
     "build": "gulp build",
-    "test": "gulp lint && mocha",
-    "prepublish": "npm test && gulp build",
+    "test": "mocha",
     "postpublish": "git push"
   },
   "dependencies": {
@@ -77,10 +76,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/assaf/zombie"
+    "url": "http://github.com/mattbailey/zombie"
   },
   "bugs": {
-    "url": "http://github.com/assaf/zombie/issues"
+    "url": "http://github.com/mattbailey/zombie/issues"
   },
   "license": "MIT"
 }
