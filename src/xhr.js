@@ -46,7 +46,9 @@ class XMLHttpRequest {
       return;
     }
     // Tell any pending request it has been aborted.
-    request.aborted = true;
+    if (request) {
+      request.aborted = true;
+    }
     this._response  = null;
     this._error     = null;
     this._pending   = null;
