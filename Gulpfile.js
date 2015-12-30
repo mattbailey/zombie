@@ -29,11 +29,7 @@ gulp.task('build', ['clean'], function() {
     .pipe(sourcemaps.init())
     .pipe(babel())
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('lib'))
-    .pipe(notify({
-      message: 'Zombie: built!',
-      onLast:  true
-    }));
+    .pipe(gulp.dest('lib'));
 });
 
 
